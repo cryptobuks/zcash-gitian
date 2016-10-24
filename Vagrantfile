@@ -16,10 +16,10 @@ Vagrant.configure(2) do |config|
       v.memory = 4096
       v.cpus = 2
     end
-#    gitian.vm.synced_folder "~/.gnupg", "/home/vagrant/.gnupg", type: "sshfs"
+    gitian.vm.synced_folder "~/.gnupg", "/home/vagrant/.gnupg", type: "sshfs"
 #    gitian.vm.synced_folder "./gitian.sigs", "/home/vagrant/gitian.sigs", create: true
 #    gitian.vm.synced_folder "./zcash-binaries", "/home/vagrant/zcash-binaries", create: true
-    gitian.vm.post_up_message = "Zcash deterministic build environment started."
+#    gitian.vm.post_up_message = "Zcash deterministic build environment started."
   end
 
 end
